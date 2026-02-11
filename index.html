@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentine's Day 💖</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #ffb6c1, #ffc0cb);
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 0px;
+            font-size: 40px;
+            color: black;
+            text-shadow: 2px 2px 5px #ff4d6d;
+        }
+
+        .message {
+            font-size: 20px;
+            color: black;
+            margin-top: 20px;
+        }
+
+        /* Balloon Style */
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            width: 50px;
+            height: 70px;
+            background: red;
+            border-radius: 50%;
+            animation: float 8s linear infinite;
+        }
+
+        .balloon::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 50px;
+            background: red;
+            top: 70px;
+            left: 24px;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-900px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>🎉 Happy Valentine's Day Keerthuuu Babyyy💖</h1>
+
+<p class="message">
+You are the most special part of my life 🤍<br>
+Everyday I celebrate *you* 💕<br>
+I am so lucky to have you in my life 🌸<br>
+Their are no words to tell about you<br>
+I loveeee youuuu soo muchhh and misss uu a lotttt Babyyy💖<br>
+When u tie a knot for my neck that is the biggest dream day for me.
+</p>
+<br>
+<img src="image18.jpg" width="150" height="180">
+
+<!-- Balloons -->
+<div class="balloon" style="left:10%; background:black;"></div>
+<div class="balloon" style="left:25%; background:#ff4d6d;"></div>
+<div class="balloon" style="left:40%; background:red;"></div>
+<div class="balloon" style="left:60%; background:#ff6699;"></div>
+<div class="balloon" style="left:75%; background:white;"></div>
+
+
+<br>
+
+
+</body>
+<button onclick="document.getElementById('bgMusic').play()">
+    Play the Song 💕<br>
+    (Please listen to the music first then click next)
+    </button>
+    <audio id="bgMusic" loop>
+        <source src="love.mpeg" type="audio/mpeg">
+    </audio> 
+
+    <br>
+
+    <a href="question2.html">Next ➡️</a>
+</html>

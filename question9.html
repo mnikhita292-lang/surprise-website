@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 4 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Did you got hurt bcoz of me? ❤️</h2>
+
+<button onclick="yes()">YES 💖</button>
+<button onclick="no()">NO 💔</button>
+
+<div id="box" class="hidden">
+    <p>What is the biggest reason when u got hurt?🌸</p>
+    <form action="https://formsubmit.co/mnikhita423@gmail.com" method="POST">
+
+        <textarea name="message" placeholder="Write something..." required></textarea>
+        <br><br>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://surpriseforkeerthi.netlify.app/question10.html">
+        <button type="submit">Send 💕</button>
+    
+    </form>
+    <br><br>
+
+<p id="result"></p>
+
+<div id="nextBox" style="display:none;">
+    <br>
+   
+    <a href="question10.html">Next ➡️</a>
+
+</div>
+
+<script>
+function yes() {
+    document.getElementById("box").style.display = "block";
+}
+function no() {
+    document.getElementById("box").style.display = "block";
+}
+function send() {
+    let text = document.getElementById("msg").value;
+
+    document.getElementById("result").innerHTML =
+    "💖 Your message 💖<br>" + text;
+
+    document.getElementById("nextBox").style.display = "block";
+}
+
+function moveNo(e) {
+    let x = Math.random() * 200;
+    let y = Math.random() * 200;
+    e.target.style.transform =
+    "translate(" + x + "px," + y + "px)";
+}
+</script>
+
+</body>
+</html>

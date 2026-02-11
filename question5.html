@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One More Question 🤍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🤍 Something From My Heart 🤍</h1>
+
+<h2>When you're upset, what do you need from me the most?</h2>
+
+<button onclick="yes()">Tell me 💬</button>
+
+<div id="box" class="hidden">
+    <form action="https://formsubmit.co/mnikhita423@gmail.com" method="POST">
+
+        <textarea name="message" placeholder="Write something..." required></textarea>
+        <br><br>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://surpriseforkeerthi.netlify.app/question6.html">
+        <button type="submit">Send 💕</button>
+    
+    </form>
+    <br><br>
+</div>
+
+<p id="result"></p>
+
+<div id="nextBox" style="display:none;">
+    <br>
+   
+    <a href="question6.html">Next ➡️</a>
+
+</div>
+
+
+<script>
+function yes() {
+    document.getElementById("box").style.display = "block";
+}
+function no() {
+    document.getElementById("box").style.display = "block";
+}
+
+function send() {
+    let text = document.getElementById("msg").value;
+
+    document.getElementById("result").innerHTML =
+    "💖 Your message 💖<br>" + text;
+
+    document.getElementById("nextBox").style.display = "block";
+}
+</script>
+
+</body>
+</html>
